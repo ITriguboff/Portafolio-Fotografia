@@ -1,4 +1,3 @@
-
 var gallery = (function(){
   
   'use strict';
@@ -92,10 +91,3 @@ var gallery = (function(){
 })();
 // ready function of gallery
 gallery.ready_();
-
-
-
-
-
-
-

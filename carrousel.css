@@ -286,34 +286,58 @@
   }
   
 
-
+  .introduccion
+  {
+	margin: 10px 30px 10px 10px;
+	border-style: dotted;
+	border-radius: 0px 10px 0px 5px;
+	font-size:larger;
+	padding: 4px 4px 3px 3px;
+	background-color: #83838379;
+  }
 
 /* = @media queries  info 
 ===========================*/
-
-
+body:before {
+	margin: 1em;
+  }
+  
+  @media (min-width: 980px) {
+	body:before {
+	  content: "";
+	  color: black;
+	}
+  }
   
   @media (min-width: 768px) and (max-width: 979px) {
 	body:before {
-	  content: "@Media info: Portrait tablet to landscape desktop";
+	  content: "";
 	  color: black;
 	}
   }
   
   @media (max-width: 767px) {
 	body:before {
-	  content: "@Media info: Landscape phone to portrait tablet ";
+	  content: "";
 	  color: black;
 	}
   }
   
   @media (max-width: 480px) {
 	body:before {
-	  content: "@Media info: Landscape phones and down";
+	  content: "";
 	  color: black;
 	}
   }
-
+  /*    Basic
+  ================*/
+  html,body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 100%;
+  }
+  
   *,*:after,*:before {
 	box-sizing: border-box;
   }
@@ -340,13 +364,11 @@
 	width: 0.2em;
 	background: #e74c3c;
   }
-  
+  /*	
+  =======================
   ::-webkit-scrollbar-track {
-	width: 0.2em;
-	background: #e74c3c;
   }
-
-  
+  */
   ::-webkit-scrollbar-thumb {
 	background: #fff;
   }
@@ -390,7 +412,13 @@
   }
   /*	Layout
   =======================*/
-
+  body {
+	background: #EEE;
+	overflow-X: hidden;
+	font-size: 13px;
+	font-family: 'Metrophobic', sans-serif;
+	font-weight: 400;
+  }
   
   .wrapper {
 	margin: 5% auto;
@@ -581,15 +609,15 @@
 	font-family: 'Leckerli One', cursive;
 	color: #F88484;
   }
-  
+  /*  X de cierre de ventana emergente*/
   .cl {
-	position: absolute;
+	position: fixed;
 	top: 0.5em;
 	right: 0.5em;
-	color: #777;
+	color: rgb(92, 92, 92);
 	text-decoration: none;
 	display: inline-block;
-	font-size: 2em;
+	font-size: 4em;
   }
   
   .cl:hover {
@@ -623,15 +651,15 @@
 	padding: 0.5em;
 	text-decoration: none;
 	line-height: 0.4em;
-	background: #FFF;
+	background: rgba(255, 255, 255, 0);
 	color: #838383;
-	border: 1px solid #C2C2C2;
+	border: 1px solid #c2c2c200;
   
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	
-	position: absolute;
+	position:fixed;
 	right: 0.3em;
 	top: 0.3em;
 	word-break: break-all;
@@ -1006,28 +1034,13 @@
 	.cl {
 	  top: 0;
 	  right: 0.5em;
-	}
+	}f
   
 	.gallery_item_list {
 	  width: 100% !important;
 	}
   
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
