@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="carrousel.css">
     <script src="carrousel.js"></script>
-    <title>Document</title>
+    <title>Galeria Fotografica</title>
 </head>
 <body>
 	<section class="photo" id="inicio">
@@ -16,9 +16,9 @@
         <label for="toggle">&#9776</label>
         <input type="checkbox" id="toggle" />
         <div class="menu">
-          <h5 class="logo">Karla Pereyra PH</h5>
+          <h5 class="logo"> PH</h5>
           <a href="./index.html">inicio</a>
-                    <a href="#contacto">contacto</a>
+                 
         </div>
       </div>
         
@@ -28,6 +28,79 @@
 
 
 	  <link href='https://fonts.googleapis.com/css?family=Leckerli+One|Metrophobic' rel='stylesheet' type='text/css'>
+
+
+		
+
+
+
+
+<!-- Modal Forms -->
+<section>
+	<div class="main">
+		<h1>Modal forms</h1>
+		<div class="btns">
+		  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+		  <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</button>
+		</div>
+	  </div>
+	  <div id="id01" class="modal">
+	  
+		<form class="modal-content animate" >
+		  <div class="imgcontainer">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		  </div>
+		  <div class="container">
+			<h2 style="text-align:center;">Login form</h2>
+			<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="uname" required>
+	  
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+	  
+			<button type="submit">Login</button>
+	  
+		  </div>
+		  <div class="container" >
+			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	  
+	  
+	  
+		  </div>
+	  
+		</form>
+	  
+	  </div>
+	  <div id="id02" class="modal">
+	  
+		<form class="modal-content animate" >
+		  <div class="imgcontainer">
+			<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+		  </div>
+		  <div class="container">
+			<h2 style="text-align:center;">Signup form</h2>
+			<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="uname" required>
+	  
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+	  
+			<button type="submit">Submit</button>
+	  
+		  </div>
+		  <div class="container" >
+			<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+	  
+	  
+	  
+		  </div>
+	  
+		</form>
+	  
+	  </div>
+</section>
+
+
 
 
 <section class="introduccion">
@@ -54,6 +127,7 @@
 
 
 </section>
+
 
 
 
@@ -399,6 +473,13 @@
 	  
 	  
 			
+ 
+
+
+
+
+
+
 
 
 <!--

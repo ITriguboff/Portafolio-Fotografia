@@ -210,15 +210,17 @@ label{
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  padding: 20px;
+   padding: 20px;
   width: 300px;
   margin: 10px 0 10px 0;
   transition: all 450ms ease;
+  
+  
 }
 
 .inner-text:hover{
   cursor: pointer;
-  box-shadow: -1px 6.5px 15px rgba(208, 211, 214, 0.75);
+  box-shadow: -1px 6.5px 15px rgb(104, 104, 104);
 }
 
 .ic{
@@ -234,7 +236,7 @@ label{
 .inner-text h3{
   color: #299FFF;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 1.2px;
 }
 
