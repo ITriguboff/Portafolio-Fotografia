@@ -3,8 +3,10 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #c9c9c9;
+  background-color: #7b527cc4;
+  /* background-image: url(/blue-marble.jpg); */
   font-family: 'Raleway', sans-serif;
+   
 }
 
 *::selection{
@@ -112,18 +114,20 @@ label{
   height: 200vh;
   top: 0;
   left: 0;
-  background: rgba(60, 63, 114, .6);
+  background: rgba(13, 15, 59, 0.6)
 }
 
 .photo h4{
   font-size: 60px;
-  text-transform: uppercase;
+  font-weight:900;
+  /* text-transform: ; */
   letter-spacing: 1.2px;
   color: #c9c9c9;
   margin: 10px;
   cursor: pointer;
   position: relative;
   z-index: 998;
+  font-family: 'Petit Formal Script', cursive; /*Petit formal fonts*/
 }
 
 .photo p{
@@ -223,9 +227,9 @@ label{
   box-shadow: -1px 6.5px 15px rgb(104, 104, 104);
 }
 
-.ic{
+.ic{ /* texto de card eventos */
   font-size: 35px;
-  color: #EBA675;
+  color: #a04300;
   transition: all 250ms ease;
 }
 
@@ -233,21 +237,21 @@ label{
  opacity: .7;
 }
 
-.inner-text h3{
-  color: #299FFF;
+.inner-text h3{ /* texto de card eventos */
+  color: #21016d;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1.2px;
 }
 
-.inner-text h5{
-  color: #6D85A8;
+.inner-text h5{ /* texto de card eventos */
+  color: #000000;
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
 
-.inner-text p{
-  color: #6D85A8;
+.inner-text p{ /* texto de card eventos */
+  color: #0c0808;
 }
 
 .inner-content{
@@ -290,17 +294,17 @@ ul li img{
   padding: 10px;
 }
 
-ul li h4{
-  color: #354757;
+ul li h4{ /* texto de carrousel eventos */
+  color: #000000;
   font-weight: 300;
   font-size: 25px;
 }
 
-ul li p{
+ul li p{ /* texto de carrousel eventos */
   font-size: 20px;
   width: 80%;
   margin: 0 auto;
-  color: #6D85A8;
+  color: #000000;
 }
 
 #slider figure{
@@ -341,7 +345,7 @@ ul li p{
   height: 3px;
   margin: 20px auto;
   border: 0;
-  background: #E58859;
+  background: #5962e5;
 }
 
 .portafolio-container{
@@ -373,7 +377,7 @@ ul li p{
 }
 
 .portafolio-text h5{
-  color: #299FFF;
+  color:  #21016d;
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -382,7 +386,7 @@ ul li p{
 
 .portafolio-text p{
   text-align: justify;
-  color: #6D85A8;
+  color: #404e63;
 }
 
 .portafolio-item:hover .portafolio-text{

@@ -1,7 +1,54 @@
-body{
-	height: 100vh;
+
+  /* = @media queries  info 
+===========================*/
+body:before {
+	margin: 1em;
+	background-image: url(/blue-marble.jpg);
+  }
+  
+  @media (min-width: 980px) {
+	body:before {
+	  content: "";
+	  color: black;
+	}
+  }
+  
+  @media (min-width: 768px) and (max-width: 979px) {
+	body:before {
+	  content: "";
+	  color: black;
+	}
+  }
+  
+  @media (max-width: 767px) {
+	body:before {
+	  content: "";
+	  color: black;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	body:before {
+	  content: "";
+	  color: black;
+	}
+  }
+
+  /*    Basic
+  ================*/
+  html,body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 100%;
 	text-align: center;
   }
+  
+  *,*:after,*:before {
+	box-sizing: border-box;
+  }
+
+
 /*MENU*/
 .nav{
 	text-align: right;
@@ -9,16 +56,18 @@ body{
 	line-height: 70px;
 	position: relative;
 	z-index: 999;
+	
+	
   }
   
   .menu{
-	margin: 0 30px 0 0;
+	margin: 10px 10px 30px 0px;
   }
   
   .menu a{
 	clear: right;
 	text-decoration: none;
-	color: #c9c9c9;
+	color: #ffffff;
 	margin: 0 10px;
 	line-height: 70px;
 	letter-spacing: .9px;
@@ -103,7 +152,7 @@ body{
 	height: 200vh;
 	top: 0;
 	left: 0;
-	background: rgba(60, 63, 114, .6);
+	background: rgba(60, 63, 114, 0.507);
   }
   
  
@@ -292,49 +341,124 @@ body{
   .introduccion
   {
 	margin: 10px 30px 10px 10px;
-	border-style: dotted;
-	border-radius: 0px 10px 0px 5px;
+	border-style: outset;
+	border-width: 3px;
+	border-color: #646464;
+	border-radius: 0px 30px 0px 0px;
 	font-size:larger;
-	padding: 4px 4px 3px 3px;
-	background-color: #83838379;
+	padding: 14px 14px 10px 10px;
+	background-color: #48708079;
   }
+
+/*titulo */
+
+#titulo-galeria{
+	text-align: center;
+	padding-inline: 30%;
+	margin-top: -35px;
+	margin-bottom: 20px;
+	
+}
+
+  #tittle-box{
+	width:500px;
+	text-align:center;
+	top:50%;
+	transform:translateY(50%);
+	color:#ff5c5c;
+	text-transform:uppercase;
+  }
+  #tittle-box .tittle{
+	font-family: roboto condensed;
+	font-weight: bolder;
+	font-size: 65px;
+	letter-spacing: -1px;
+	padding-bottom: 30px;
+  }
+  #tittle-box .subttitle{
+	font-family: montserrat;
+	font-weight: bold;
+	letter-spacing: 3px;
+	font-size: 12px;
+	
+  }
+  #tittle-box .subttitle:after{
+	width:125px;
+	height:2px;
+	background:#ff5c5c;
+	display:inline;
+	content: "";
+	position:absolute;
+	top:8px;
+	right:30px;
+	
+  }
+  #tittle-box .subttitle:before{
+	width:125px;
+	height:2px;
+	background:#ff5c5c;
+	display:inline;
+	content: "";
+	position:absolute;
+	top:8px;
+	right:350px;
+	
+  }
+  
+
+
 
 
 
    /*Modal Code*/
-input[type=text],input[type=password]{
+/* input[type=text],input[type=text]{
 	width: 100%;
-	padding: 12px 18px;
+	padding: auto;
 	margin:8px 0;
 	display: inline-block;
-	box-sizing: border-box;
+	box-sizing:content-box;
 	outline: none;
 	border: 2px solid #ccc;
-  }
-  button {
-	background-color: #535353;
-	color: rgb(224, 224, 224);
-	padding: 14px 20px;
-	margin: 8px 0;
+  } */
+
+  .comentarios{
 	border: none;
+	border-radius: 5px 5px 5px 5px;
+	margin: auto;
+	background-color: #ffffffa2;
+  }
+
+  button {
+	background-color: #1f1341;
+	color: rgb(224, 224, 224);
+	padding: 10px ;
+	margin: 28px 8px ;
+	border: none;
+	border-radius: 5px 5px 5px 5px;
 	cursor: pointer;
-	width: 100%;
+	font-size: large;
   }
   button:hover {
 	opacity: 0.8;
   }
   .container {
-	padding: 16px;
+	padding: 1px;
+	color: #299FFF;
   }
+
+.container2 {
+	margin: auto;
+	padding: 50px;
+
+}
+
   .btns{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	display:contents;
+	justify-content:space-around;
   }
   .main{
-	background-color: rgb(226, 226, 226);
-	padding: 20px;
+	background-color: rgb(148, 13, 13);
+	padding: -100px;
 	border-radius: 5px;
   }
   span.psw {
@@ -342,31 +466,33 @@ input[type=text],input[type=password]{
 	padding-top: 16px;
   }
   .modal{
-	display: none;
+	display: center;
 	position: fixed;
-	z-index: 1;
-	left: 0;
+	z-index: 999;
+	left: -auto;
+	right: 10;
 	top: 0;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	overflow: auto;
-	background-color: black;
-	background-color: rgb(0,0,0,0.4);
-	padding-top: 60px;
+	background-color: rgba(0, 0, 0, 0);
+		padding: 0px;
   
   }
   .modal-content{
-	background-color: #ffffff;
-	margin:5% auto 15% auto;
-	border: 1px solid #888;
-	width: 80%;
+	background-color:rgb(11, 61, 90)/*  #628196 */;
+	margin:2% auto 15% auto;
+	border: 1px solid rgb(66, 1, 1);
+	width: 50%;
+	border-radius: 10px 10px 10px 10px;
+	
   }
   .close {
 	position: absolute;
-	right: 25px;
+	right: 15px;
 	top: 0;
-	color: #000;
-	font-size: 35px;
+	color: rgb(160, 5, 83);
+	font-size: 45px;
 	font-weight: bold;
   }
   .close:hover,
@@ -403,7 +529,15 @@ input[type=text],input[type=password]{
 	position: relative;
   }
   
-
+  .titulo-modal{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	/* background-image: linear-gradient(to left, violet, green, yellow, orange, red);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; */
+  font-size: x-large;
+  color: #eedcdc;
+  }
 /*Modal Code end*/
 
 
@@ -415,51 +549,7 @@ input[type=text],input[type=password]{
 
   
 
-/* = @media queries  info 
-===========================*/
-body:before {
-	margin: 1em;
-  }
-  
-  @media (min-width: 980px) {
-	body:before {
-	  content: "";
-	  color: black;
-	}
-  }
-  
-  @media (min-width: 768px) and (max-width: 979px) {
-	body:before {
-	  content: "";
-	  color: black;
-	}
-  }
-  
-  @media (max-width: 767px) {
-	body:before {
-	  content: "";
-	  color: black;
-	}
-  }
-  
-  @media (max-width: 480px) {
-	body:before {
-	  content: "";
-	  color: black;
-	}
-  }
-  /*    Basic
-  ================*/
-  html,body {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	height: 100%;
-  }
-  
-  *,*:after,*:before {
-	box-sizing: border-box;
-  }
+
   /*  PLACEHOLDER
   ----------------------*/
   ::-webkit-input-placeholder {
@@ -499,12 +589,12 @@ body:before {
   -------------------*/
   ::selection {
 	background: #999;
-	color: #fff;
+	color: rgb(255, 255, 255);
   }
   
   ::-moz-selection {
 	background: #999;
-	color: #fff;
+	color: rgb(255, 255, 255);
   }
   /* === Links Styles === */
   a {
@@ -526,17 +616,20 @@ body:before {
   
   a:focus {
 	outline: 0;
-	outline: 0 auto -webkit-focus-ring-color;
+	outline: 0 auto ;
+	-webkit-focus-ring-color: hidden;
 	outline-offset: 0;
   }
   /*	Layout
   =======================*/
   body {
-	background: #EEE;
+	background: rgb(238, 238, 238);
+	background-image: url(/marble-pink.jpg);
 	overflow-X: hidden;
 	font-size: 13px;
 	font-family: 'Metrophobic', sans-serif;
 	font-weight: 400;
+	
   }
   
   .wrapper {
@@ -544,7 +637,7 @@ body:before {
 	display: block;
 	width: 96%;
 	height: 100%;
-	padding: 0;
+	padding: 1px;
   }
   
   .wrapper:before {
@@ -556,20 +649,21 @@ body:before {
 	padding: 0.2em;
 	margin: 0;
   }
-  
+  /* 
   .gallery {
-  }
+	
+  } */
   
   .gallery_item {
-	float: left;
+	float:left;
 	width: 24.59%;
 	display: inline-block;
 	margin: 0 auto;
 	margin-right: 0.25em;
 	margin-bottom: 0.5em;
 	padding: 0.5em;
-	background: #FFF;
-	border: 1px solid #F3F0F0;
+	background: rgba(204, 204, 204, 0.747);
+	border: 1px solid #f3f0f0;
 	position:relative;
 	-webkit-box-shadow: 0 1px 2px #AFAFAF;
 	-moz-box-shadow: 0 1px 2px #AFAFAF;
@@ -582,7 +676,7 @@ body:before {
   
   
   .gallery_item_preview {
-	background: #fff;
+	background: rgba(255, 255, 255, 0);
   
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -646,9 +740,8 @@ body:before {
 	position: absolute;
 	top: 0.5em;
 	left: -30em;
-	background-color: #FFF;
-	background-color: rgba(255, 255, 255, 0.99);
-	color: #F57171;
+	background-color: rgba(255, 255, 255, 0.616);
+	color: #bb5757;
 	padding: 0.56em 1em;
   
 	-webkit-border-radius: 5px 0 0 0;
@@ -766,11 +859,11 @@ body:before {
   .icon_list {
 	width: 30px;
 	height: 30px;
-	display: block;
+	display:block;
 	padding: 0.5em;
 	text-decoration: none;
 	line-height: 0.4em;
-	background: rgba(255, 255, 255, 0);
+	background: rgba(43, 40, 40, 0.205);
 	color: #838383;
 	border: 1px solid #c2c2c200;
   
@@ -780,7 +873,7 @@ body:before {
 	
 	position:fixed;
 	right: 0.3em;
-	top: 0.3em;
+	top: 45.3em;
 	word-break: break-all;
   
 	-webkit-transition: all 0.5s ease;

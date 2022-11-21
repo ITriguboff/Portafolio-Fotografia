@@ -1,4 +1,4 @@
-$(document).ready(function(){
+g$(document).ready(function(){
     $('#slider').fadeIn('slow').delay(200);
     $("#sticker").sticky({topSpacing:0});
   });

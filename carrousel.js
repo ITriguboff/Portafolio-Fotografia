@@ -2,7 +2,7 @@ var gallery = (function(){
   
   'use strict';
   
-  // vars
+  // variables
   var gal_item = $('.gallery_item'),
       gal_img = $('.gallery_item_preview a img'),
       gal_full = $('.gallery_item_full'),
@@ -17,7 +17,7 @@ var gallery = (function(){
     lk: function(e){return $("[data-lk="+e+"]");},
     // Ready functions
     ready_: function(){this.events();},
-    //  functions
+    //  first functions
     events:function(){
       var self = this;
       // add close link
@@ -46,9 +46,9 @@ var gallery = (function(){
         // change icon style
         if(gal_item.hasClass('gallery_item_list')){
           $(this).addClass('icon_list_open')
-          .html('<span>•••</span>'+
-                '<span>•••</span>'+
-                '<span>•••</span>');
+          .html('<span>••</span>'+
+                '<span>••</span>'+
+                '<span>••</span>');
           gal_top.attr("class", "gallery_top gallery_hide_top");
         }else{
           $(this).removeClass('icon_list_open')
